@@ -8,3 +8,30 @@
    Filename:    styles.css
 
 */
+
+/* Grid Styles */
+
+main {
+   height: 100vh;
+   display: grid;
+   grid-template-rows: 300pxfr 300pxfr;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-areas: "headerBlock headerBlock headerBlock"
+                        "bodyBlock bodyBlock contactBlock";
+}
+
+main img {
+   width: 100%;
+}
+
+.headerBlock {
+   grid-area: headerBlock;
+}
+
+.bodyBlock {
+   grid-area: bodyBlock;
+}
+
+.contactBlock {
+   grid-area: contactBlock;
+}
