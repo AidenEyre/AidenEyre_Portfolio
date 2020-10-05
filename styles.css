@@ -14,7 +14,7 @@
 main {
    height: 100vh;
    display: grid;
-   grid-template-rows: 300pxfr 300pxfr;
+   grid-template-rows: 1fr 1fr;
    grid-template-columns: 1fr 1fr 1fr;
    grid-template-areas: "headerBlock headerBlock headerBlock"
                         "bodyBlock bodyBlock contactBlock";
