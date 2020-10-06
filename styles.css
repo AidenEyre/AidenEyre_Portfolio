@@ -9,29 +9,46 @@
 
 */
 
-/* Grid Styles */
+body {
+   width: 100%;
+}
+
+/* Header Styles */
+
+header {
+   background-color: rgba(128, 128, 128, 0.493);
+}
+
+header img {
+   width: 25vh;
+   border-radius: 50%;
+}
+
+div {
+   display: block;
+   text-align: center;
+   margin: 0 auto;
+}
+
+/* Main Styles */
 
 main {
    height: 100vh;
    display: grid;
-   grid-template-rows: 1fr 1fr;
    grid-template-columns: 1fr 1fr 1fr;
-   grid-template-areas: "headerBlock headerBlock headerBlock"
-                        "bodyBlock bodyBlock contactBlock";
+   grid-template-rows: 1fr 1fr;
+   grid-template-areas: "nav nav contact"
+              "body body contact";
 }
 
-main img {
-   width: 100%;
-}
-
-.headerBlock {
-   grid-area: headerBlock;
+.navBlock {
+   grid-area: nav;
 }
 
 .bodyBlock {
-   grid-area: bodyBlock;
+   grid-area: body;
 }
 
 .contactBlock {
-   grid-area: contactBlock;
+   grid-area: contact;
 }
