@@ -9,6 +9,10 @@
 
 */
 
+html {
+   /* overflow-x: hidden; */
+}
+
 body {
    width: 100%;
 }
@@ -24,11 +28,12 @@ header img {
    border-radius: 50%;
 }
 
-div {
+header div {
    display: block;
    text-align: center;
    margin: 0 auto;
 }
+
 
 /* Main Styles */
 
@@ -36,7 +41,7 @@ main {
    height: 100vh;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: 1fr 1fr;
+   grid-template-rows: auto 1fr;
    grid-template-areas: "nav nav contact"
               "body body contact";
 }
@@ -51,4 +56,24 @@ main {
 
 .contactBlock {
    grid-area: contact;
+}
+
+
+ /* Navigation Styles */
+
+.navBlock {
+   width: 100%;
+}
+
+.navBlock button {
+   display: inline-flex;
+   float: left;
+   width: 33.333%;
+}
+
+/* Contact Styles */
+
+.contactBlock {
+   margin: 0 0.5em;
+   border: 0.5em solid black;
 }
