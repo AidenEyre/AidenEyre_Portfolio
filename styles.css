@@ -9,12 +9,33 @@
 
 */
 
+/* HTML and Body Styles */
+
 html {
-   /* overflow-x: hidden; */
+   /* This fixed the problem where the page would load slightly left. */
+   max-width: 100%;
+   overflow-x: hidden;
 }
 
 body {
-   width: 100%;
+   width: 80%;
+   margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+
+   body {
+      width: 100%;
+   }
+
+   header h1 {
+      font-size: 1.2em;
+   }
+   
+   header h2 {
+      font-size: 1.2em;
+   }
+
 }
 
 /* Header Styles */
@@ -24,38 +45,23 @@ header {
 }
 
 header img {
-   width: 25vh;
+   width: 10em;
    border-radius: 50%;
 }
 
+header h1 {
+   font-size: 2em;
+}
+
+header h2 {
+   font-size: 1.5em;
+}
+
 header div {
+
    display: block;
    text-align: center;
    margin: 0 auto;
-}
-
-
-/* Main Styles */
-
-main {
-   height: 100vh;
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: auto 1fr;
-   grid-template-areas: "nav nav contact"
-              "body body contact";
-}
-
-.navBlock {
-   grid-area: nav;
-}
-
-.bodyBlock {
-   grid-area: body;
-}
-
-.contactBlock {
-   grid-area: contact;
 }
 
 
@@ -68,12 +74,19 @@ main {
 .navBlock button {
    display: inline-flex;
    float: left;
-   width: 33.333%;
+   width: 25%;
 }
 
-/* Contact Styles */
 
-.contactBlock {
-   margin: 0 0.5em;
-   border: 0.5em solid black;
+/* Information Style */
+
+.bodyBlock div {
+   clear: both;
+}
+
+
+#projectSection,
+#resumeSection,
+#contactMeSection {
+  display: none;
 }
