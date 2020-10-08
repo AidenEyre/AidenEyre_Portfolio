@@ -47,13 +47,16 @@ header {
 header img {
    width: 10em;
    border-radius: 50%;
+   margin-top: 1%;
 }
 
 header h1 {
+   margin: 0 auto;
    font-size: 2em;
 }
 
 header h2 {
+   margin: 0.5% auto;
    font-size: 1.5em;
 }
 
@@ -72,15 +75,17 @@ header div {
 }
 
 .navBlock button {
-   display: inline-flex;
+   display: block;
    float: left;
    width: 25%;
+   text-align: center;
 }
 
 
 /* Information Style */
 
-.bodyBlock div {
+.bodyBlock>div {
+   display: flex;
    clear: both;
 }
 
