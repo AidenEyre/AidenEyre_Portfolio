@@ -14,7 +14,9 @@
 html {
    /* This fixed the problem where the page would load slightly left. */
    max-width: 100%;
+   height: 100%;
    overflow-x: hidden;
+   background-image: linear-gradient(rgb(129, 129, 129), rgb(202, 202, 202));
 }
 
 body {
@@ -29,19 +31,14 @@ body {
    }
 
    header h1 {
-      font-size: 1.2em;
+      font-size: 2em;
    }
-   
-   header h2 {
-      font-size: 1.2em;
-   }
-
 }
 
 /* Header Styles */
 
 header {
-   background-color: rgba(128, 128, 128, 0.493);
+   border-bottom: 2px solid yellow;
 }
 
 header img {
@@ -51,13 +48,9 @@ header img {
 }
 
 header h1 {
-   margin: 0 auto;
-   font-size: 2em;
-}
-
-header h2 {
    margin: 0.5% auto;
-   font-size: 1.5em;
+   font-size: 2em;
+   color:white;
 }
 
 header div {
@@ -72,13 +65,21 @@ header div {
 
 .navBlock {
    width: 100%;
+   text-align: center;
 }
 
-.navBlock button {
-   display: block;
-   float: left;
-   width: 25%;
+.navBlock h2 {
+   border-style: none;
+   display: inline-block;
+   width: 15%;
+   margin: 2%;
    text-align: center;
+   color: white;
+   font-size: 1.2em;
+}
+
+.navBlock h2:hover {
+   cursor: no-drop;
 }
 
 
