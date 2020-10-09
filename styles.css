@@ -95,6 +95,14 @@ header > div {
 
 .headButtons {
   grid-area: buttons;
+  width: 100%;
+}
+
+.headButtons img {
+   margin: 1%;
+   display: flex;
+   float: right;
+   width: 2em;
 }
 
 /* Navigation Styles */

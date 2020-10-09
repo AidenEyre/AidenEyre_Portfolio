@@ -18,7 +18,17 @@
   <body>
     <header>
       <div>
-        <div class="headButtons"></div>
+        <div class="headButtons">
+          <a href="https://github.com/AidenEyre" target="blank"
+            ><img src="images/github.png" alt="Github Logo" />
+          </a>
+          <a href="" target="blank"
+            ><img src="images/email.png" alt="Email Logo" />
+          </a>
+          <a href="" target="blank"
+            ><img src="images/linkedin.png" alt="Email Logo" />
+          </a>
+        </div>
         <img
           class="headImage"
           src="images/PictureOfMe3.jpg"
@@ -34,7 +44,7 @@
           <h2 id="resumeButton">Resume</h2>
           <h2 id="aboutMeButton">About Me</h2>
           <h2 id="projectsButton">Projects</h2>
-          <h2 id="contactMeButton">Contact Me</h2>
+          <a href="#name"><h2 id="contactMeButton">Hire Me</h2></a>
         </nav>
       </div>
 
@@ -60,11 +70,29 @@
         </div>
         <div id="contactMeSection">
           <form action="">
-            <input class="formInput" name="name" id="name" type="text" required />
+            <input
+              class="formInput"
+              name="name"
+              id="name"
+              type="text"
+              required
+            />
             <div class="formText">Your Name*</div>
-            <input class="formInput" name="email" id="email" type="text" required />
+            <input
+              class="formInput"
+              name="email"
+              id="email"
+              type="text"
+              required
+            />
             <div class="formText">Your Email*</div>
-            <input class="formInput" name="subject" id="subject" type="text" required />
+            <input
+              class="formInput"
+              name="subject"
+              id="subject"
+              type="text"
+              required
+            />
             <div class="formText">Subject*</div>
             <textarea
               name="message"
