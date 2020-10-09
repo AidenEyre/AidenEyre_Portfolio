@@ -69,6 +69,10 @@ header > div {
     grid-template-columns: 12em 1fr 1fr;
     grid-template-areas: "image name buttons";
   }
+
+  .headImage {
+   margin-left: 5%;
+  }
 }
 
 .headImage {
@@ -97,6 +101,7 @@ header > div {
 .navBlock {
   width: 100%;
   text-align: center;
+  border-bottom: 2px solid yellow;
 }
 
 .navBlock h2 {
@@ -128,4 +133,16 @@ header > div {
 #resumeSection,
 #contactMeSection {
   display: none;
+}
+
+/* Resume Section Styles */
+
+#resumeSection a {
+   margin: 0 auto;
+   text-decoration: none;
+   color: white;
+}
+
+#resumeSection a:hover {
+   color: yellow;
 }
