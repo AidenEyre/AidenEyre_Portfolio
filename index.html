@@ -60,17 +60,21 @@
         </div>
         <div id="contactMeSection">
           <form action="">
-            <input name="name" id="name" type="text" required />
+            <input class="formInput" name="name" id="name" type="text" required />
             <div class="formText">Your Name*</div>
-            <input name="email" id="email" type="text" required />
+            <input class="formInput" name="email" id="email" type="text" required />
             <div class="formText">Your Email*</div>
-            <input name="subject" id="subject" type="text" required />
+            <input class="formInput" name="subject" id="subject" type="text" required />
             <div class="formText">Subject*</div>
             <textarea
               name="message"
               id="message"
               placeholder="What would you like to say?"
             ></textarea>
+
+            <div id="submitForm">
+              <input type="submit" value="Submit Message" />
+            </div>
           </form>
         </div>
       </div>

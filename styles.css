@@ -118,7 +118,7 @@ header > div {
 
 .navBlock h2:hover {
   cursor: pointer;
-  background-color: rgba(255, 255, 0, 0.527);
+  background-color: rgba(255, 255, 0, 0.308);
   transition: all 0.5s;
   transform: scale(1.1);
 }
@@ -154,11 +154,11 @@ form {
   margin: 5% auto;
 }
 
-input, .formText {
+.formInput, .formText {
    font-size: 2em;
 }
 
-input, textarea {
+.formInput, textarea, #submitForm input {
   border: none;
   background-image: none;
   background-color: transparent;
@@ -167,7 +167,7 @@ input, textarea {
   box-shadow: none;
 }
 
-input:focus, textarea:focus {
+.formInput:focus, textarea:focus, #submitForm input:focus {
   outline: 0;
 }
 
@@ -176,17 +176,17 @@ input:focus, textarea:focus {
   transform: translateY(-100%) translateX(1%);
 }
 
-input {
+.formInput {
    border-bottom: 1px solid yellow;
 }
 
-input:focus + .formText {
+.formInput:focus + .formText {
   transition: 0.5s;
   transform: translateY(-275%);
   font-size: 1.2em;
 }
 
-input:valid + .formText {
+.formInput:valid + .formText {
    visibility: hidden;
 }
 
@@ -195,4 +195,20 @@ textarea {
    height: 25vh;
    font-size: 1.5em;
    background-color: rgba(255, 255, 0, 0.082);
+}
+
+#submitForm input{
+   display: block;
+   width: 70%;
+   margin: 5% auto;
+   font-size: 1.5em;
+   color: white;
+   border-radius: 5%;
+}
+
+#submitForm input:hover {
+   cursor: pointer;
+  background-color: rgba(255, 255, 0, 0.308);
+  transition: all 0.5s;
+  transform: scale(1.1);
 }
