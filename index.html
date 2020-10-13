@@ -31,9 +31,22 @@
         </div>
         <img
           class="headImage"
-          src="images/PictureOfMe3.jpg"
+          src="images/PictureOfMe.jpg"
           alt="Photo of Aiden Eyre"
+          usemap="#headerImageMap"
         />
+
+        <map name="image-map">
+          <area
+            target=""
+            alt="Picture of Aiden Eyre"
+            title="Picture of Aiden Eyre"
+            href="index.html"
+            coords="330,280,295,250,259,238,225,217,220,180,229,162,246,147,248,135,243,125,244,99,241,80,221,52,196,43,162,42,139,56,131,66,100,72,92,89,104,100,120,102,121,150,136,203,143,206,137,231,103,252,67,264,48,287,45,303,93,340,148,359,197,359,243,350,293,322"
+            shape="poly"
+          />
+        </map>
+
         <h1 class="headName">Aiden eyre</h1>
       </div>
     </header>
@@ -44,7 +57,7 @@
           <h2 id="resumeButton">Resume</h2>
           <h2 id="aboutMeButton">About Me</h2>
           <h2 id="projectsButton">Projects</h2>
-          <a href="#name"><h2 id="contactMeButton">Hire Me</h2></a>
+          <h2 id="contactMeButton">Hire Me</h2>
         </nav>
       </div>
 
@@ -52,21 +65,157 @@
         <div id="aboutMeSection">
           <p>
             I'm a student at Weber State University working hard to achieve a
-            bachelors degree in Computer Science. Most of my experience thus far
+            bachelors degree in Computer Science.
+            <!--Most of my experience thus far
             is in front end work such as HTML, CSS and Javascript. I also have
             spent time working with C#, C++, Java, and SQL. I absolutely love
             learning new things and enjoy every class I get the opportunity to
-            take!
+            take! -->
           </p>
         </div>
         <div id="projectSection">
-          <p>
-            better in the face of a tiger, and showed at the corners of their
-            wide, thin-lipped mouths, giving them an expression of ferocity.
-          </p>
+          <div>
+            <h1><a href="http://icarus.cs.weber.edu/~ae31972/Snake-Game/">Snake Game</a></h1>
+            <p>Basic snake game written in HTML, CSS, and JavaScript. Programmed to run on both mobile
+               and desktop. JavaScript DOM elements are used to paint the game onto an html canvas. 
+               Event handlers are used for the button and key presses.
+            </p>
+          </div>
         </div>
         <div id="resumeSection">
-          <a href=""><h2>Open Resume in PDF</h2></a>
+          <a href="AidenEyre_Resume.pdf" target="new"
+            ><h2>Open Resume in PDF</h2></a
+          >
+
+          <table id="resumeTable">
+            <thead>
+              <th colspan="2">Aiden Eyre</th>
+            </thead>
+
+            <tbody>
+              <tr id="rtContact">
+                <td class="rtContact" colspan="2">
+                  <a href="">EyreAiden@gmail.com</a>
+                   | 
+                  <a href="">(385)252-9312</a>
+                   | 
+                  <a href="">GitHub</a>
+                </td>
+              </tr>
+
+              <tr>
+                <th class="rtHead" colspan="2">Education</th>
+              </tr>
+
+              <tr>
+                <td class="rtBold">Weber State University</td>
+                <td>Expected: 06/2024</td>
+              </tr>
+
+              <tr>
+                <td>Bachelor of Science, Computer Science</td>
+                <td>GPA: 3.46</td>
+              </tr>
+
+              <tr>
+                <th class="rtHead" colspan="2">Projects</th>
+              </tr>
+
+              <tr>
+                <td class="rtBold" colspan="2">
+                  Snake Game Web App - <a href="">GitHub</a> /
+                  <a href="">Website</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="rtDoubleTab" colspan="2">
+                  Basic Snake game coded with vanilla JavaScript, Runs on mobile
+                  as well as desktop.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="rtBold" colspan="2">
+                  Pet Competition Web Form - <a href="">GitHub</a> /
+                  <a href="">Website</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="rtDoubleTab" colspan="2">Web form to sign up for a pet competition.</td>
+              </tr>
+
+              <tr>
+                <td class="rtBold" colspan="2">
+                  Portfolio Website - <a href="">GitHub</a> /
+                  <a href="">Website</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="rtDoubleTab" colspan="2">
+                  My website to show off my knowledge of computer science.
+                </td>
+              </tr>
+
+              <tr>
+                <th class="rtHead" colspan="2">Skills</th>
+              </tr>
+
+              <tr>
+                <td colspan="2"><b>Languages:</b> C++, C#, HTML, CSS, JavaScript</td>
+              </tr>
+
+              <tr>
+                <td colspan="2"><b>Source Control:</b> Git</td>
+              </tr>
+
+              <tr>
+                <th class="rtHead" colspan="2">Experience</th>
+              </tr>
+
+              <tr>
+                <td class="rtBold">Autoliv - Production Control</td>
+                <td>March 2018 - current</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <ul>
+                    <li>Independently work to keep the lines running in the most
+                  efficient way.</li>
+                    <li>Build pallets with correct part numbers to be shipped out over
+                  seas.</li>
+                    <li>Supervise a crew on the weekends and solve any problems that
+                  arise.</li>
+                  </ul>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td class="rtBold">UPS - Package Handler</td>
+                <td>September 2017 - March 2018</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <ul>
+                    <li>Loaded packages of various weights and sizes to fill up
+                  trailers and unit load devices most efficiently and organized
+                  as possible.</li>
+                    <li>I read area codes and labels to determine where the packages
+                  should be sent.</li>
+                    <li>After being assigned multiple trailers to load for the night I
+                  prioritized which trailers to move to when things got busy;
+                  however, I helped my coworkers with their own trailers while
+                  it was slow.</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div id="contactMeSection">
           <form action="">

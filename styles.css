@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+@font-face {
+  font-family: openSans;
+  src: url(fonts/OpenSans-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*
    Stylesheet for my portfolio website (PUBLIC.HTML)
    Author: Aiden Eyre
@@ -17,11 +24,13 @@
 
 html {
   /* This fixed the problem where the page would load slightly left. */
+  font-family: openSans, serif;
   max-width: 100%;
   min-height: 100%;
   overflow-x: hidden;
   background-image: linear-gradient(rgb(129, 129, 129), rgb(202, 202, 202));
   background-repeat: no-repeat;
+  box-sizing: border-box;
 }
 
 body {
@@ -48,7 +57,7 @@ header > div {
 
 @media (max-width: 800px) {
   header > div {
-    grid-template-rows: 1fr 12em 1fr;
+    grid-template-rows: auto 12em 1fr;
     grid-template-areas: "buttons" "image" "name";
   }
 
@@ -88,7 +97,7 @@ header > div {
   display: flex;
   float: left;
   align-self: center;
-  font-size: 2em;
+  font-size: 2.5em;
   color: white;
   grid-area: name;
 }
@@ -99,10 +108,10 @@ header > div {
 }
 
 .headButtons img {
-   margin: 1%;
-   display: flex;
-   float: right;
-   width: 2em;
+  margin: 1%;
+  display: flex;
+  float: right;
+  width: 2em;
 }
 
 /* Navigation Styles */
@@ -111,6 +120,7 @@ header > div {
   width: 100%;
   text-align: center;
   border-bottom: 2px solid yellow;
+  margin-bottom: 1%;
 }
 
 .navBlock h2 {
@@ -146,6 +156,11 @@ header > div {
 
 /* Resume Section Styles */
 
+#resumeSection {
+  clear: both;
+  flex-direction: column;
+}
+
 #resumeSection a {
   margin: 0 auto;
   text-decoration: none;
@@ -156,17 +171,61 @@ header > div {
   color: yellow;
 }
 
+#resumeTable {
+border-top: 3px solid black;
+}
+
+thead th {
+  padding-top: 1%;
+  font-size: 2.4em;
+}
+
+#rtContact td{
+  text-align: center;
+  padding-bottom: 1%;
+}
+
+.rtHead{
+  text-align: left;
+  font-size: 1.6em;
+  border-bottom: 2px solid black;
+  padding-top: 3%;
+}
+
+td {
+  font-size: 1.4em;
+  padding: 0.5% 0 0.5% 5%;
+  width: 70%;
+}
+
+.rtContact {
+  padding-left: 0;
+}
+
+.rtBold {
+  font-weight: bold;
+}
+
+.rtDoubleTab {
+  padding-left: 10%;
+}
+
+
 /* Contact Form Styles */
 
 form {
   margin: 5% auto;
+  width: 95%;
 }
 
-.formInput, .formText {
-   font-size: 2em;
+.formInput,
+.formText {
+  font-size: 2em;
 }
 
-.formInput, textarea, #submitForm input {
+.formInput,
+textarea,
+#submitForm input {
   border: none;
   background-image: none;
   background-color: transparent;
@@ -175,7 +234,9 @@ form {
   box-shadow: none;
 }
 
-.formInput:focus, textarea:focus, #submitForm input:focus {
+.formInput:focus,
+textarea:focus,
+#submitForm input:focus {
   outline: 0;
 }
 
@@ -185,7 +246,7 @@ form {
 }
 
 .formInput {
-   border-bottom: 1px solid yellow;
+  border-bottom: 1px solid yellow;
 }
 
 .formInput:focus + .formText {
@@ -195,28 +256,32 @@ form {
 }
 
 .formInput:valid + .formText {
-   visibility: hidden;
+  visibility: hidden;
 }
 
 textarea {
-   width: 100%;
-   height: 25vh;
-   font-size: 1.5em;
-   background-color: rgba(255, 255, 0, 0.082);
+  display: flex;
+  width: 100%;
+  height: 25vh;
+  font-size: 1.5em;
+  background-color: rgba(255, 255, 0, 0.082);
 }
 
-#submitForm input{
-   display: block;
-   width: 70%;
-   margin: 5% auto;
-   font-size: 1.5em;
-   color: white;
-   border-radius: 5%;
+#submitForm input {
+  display: block;
+  width: 70%;
+  margin: 5% auto;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  border-radius: 5%;
 }
 
 #submitForm input:hover {
-   cursor: pointer;
+  cursor: pointer;
   background-color: rgba(255, 255, 0, 0.308);
   transition: all 0.5s;
   transform: scale(1.1);
 }
+
+/* Project Tab Styles */
