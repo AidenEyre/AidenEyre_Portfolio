@@ -42,4 +42,28 @@ window.onload = function () {
     document.getElementById(clickedButton).style.display = "flex";
     this.clicked = clickedButton;
   };
+
+
+
+  var contactMeButton = document
+    .getElementById("pSnakeGameLink")
+    .addEventListener("mouseover", (evt) => {
+      document.getElementById("s16").style.backgroundColor = "red";
+
+      for(let i = 1; i <= 16; i++) {
+        let id = "s" + i;
+
+        setTimeout(() => {
+          document.getElementById(id).style.backgroundColor = "white";
+        }, 250 * i);
+      }
+
+      for(let i = 1; i <= 16; i++) {
+        let id = "s" + i;
+        setTimeout(() => {
+          document.getElementById(id).style.backgroundColor = "";
+        }, 2500 + (250*i));
+      }
+
+    });
 };
