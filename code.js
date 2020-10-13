@@ -43,27 +43,35 @@ window.onload = function () {
     this.clicked = clickedButton;
   };
 
+  if (
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    )
+  ) {
+    // Do nothing.
+  } else {
+    // Event handler for hover.
+    var contactMeButton = document
+      .getElementById("pSnakeGameLink")
+      .addEventListener("mouseover", (evt) => {
+        document.getElementById("s16").style.backgroundColor = "red";
 
+        // Loop through each div at a pace of 250ms drawing the snake.
+        for (let i = 1; i <= 16; i++) {
+          let id = "s" + i;
 
-  var contactMeButton = document
-    .getElementById("pSnakeGameLink")
-    .addEventListener("mouseover", (evt) => {
-      document.getElementById("s16").style.backgroundColor = "red";
+          setTimeout(() => {
+            document.getElementById(id).style.backgroundColor = "white";
+          }, 250 * i);
+        }
 
-      for(let i = 1; i <= 16; i++) {
-        let id = "s" + i;
-
-        setTimeout(() => {
-          document.getElementById(id).style.backgroundColor = "white";
-        }, 250 * i);
-      }
-
-      for(let i = 1; i <= 16; i++) {
-        let id = "s" + i;
-        setTimeout(() => {
-          document.getElementById(id).style.backgroundColor = "";
-        }, 2500 + (250*i));
-      }
-
-    });
+        // Clear the snake as it moves through.
+        for (let i = 1; i <= 16; i++) {
+          let id = "s" + i;
+          setTimeout(() => {
+            document.getElementById(id).style.backgroundColor = "";
+          }, 2500 + 250 * i);
+        }
+      });
+  }
 };
