@@ -287,6 +287,16 @@ textarea {
 
 /* Project Tab Styles */
 
+#projectSection {
+  clear: both;
+  flex-direction: column;
+}
+
+.projectBlock {
+  display: block;
+  float: left;
+}
+
 #projectSection a {
   margin: 0 auto;
   text-decoration: none;
@@ -298,7 +308,7 @@ textarea {
 }
 
 #projectSection p {
-  clear: both;
+  float: left;
   font-size: 1.4em;
   padding-left: 5%;
 }
@@ -311,13 +321,14 @@ textarea {
   margin-right: 2em;
 }
 
-#pSnakeGameLink, #projectSection div div {
-  display: flex;
+#pSnakeGameLink, .snakeAnimation {
+  display: block;
   float: left;
 }
 
-#projectSection div div {
+#projectSection .snakeAnimation {
   margin: 2em 0;
   height: 2em;
   width: 2em;
 }
+
