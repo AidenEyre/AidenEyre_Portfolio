@@ -332,3 +332,10 @@ textarea {
   width: 2em;
 }
 
+/* About Me Styles */
+
+#aboutMeSection p {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  text-align: center;
+}
